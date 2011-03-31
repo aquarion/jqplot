@@ -78,8 +78,8 @@
         // Add the grid onto the grid canvas.  This is the bottom most layer.
         ctx.save();
         ctx.clearRect(0, 0, this._plotDimensions.width, this._plotDimensions.height);
-        ctx.fillStyle = this.backgroundColor || this.background;
-        ctx.fillRect(this._left, this._top, this._width, this._height);
+        //ctx.fillStyle = this.backgroundColor || this.background;
+        //ctx.fillRect(this._left, this._top, this._width, this._height);
         
         if (true) {
             ctx.save();
@@ -130,7 +130,7 @@
                                         }
                                         // draw the shadow
                                         if (this.shadow) {
-                                            this.renderer.shadowRenderer.draw(ctx, [[pos,b],[pos,e]], {lineCap:'butt', lineWidth:this.gridLineWidth, offset:this.gridLineWidth*0.75, depth:2, fill:false, closePath:false});
+                                            //this.renderer.shadowRenderer.draw(ctx, [[pos,b],[pos,e]], {lineCap:'butt', lineWidth:this.gridLineWidth, offset:this.gridLineWidth*0.75, depth:2, fill:false, closePath:false});
                                         }
                                         // draw the line
                                         drawLine(pos, b, pos, e);
